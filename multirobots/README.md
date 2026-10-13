@@ -7,25 +7,25 @@
 </p>
 
 ## 📌 Overview
-This repository contains the full development of a scalable multi-robot simulation system from scratch using **ROS 2 (Jazzy)** and **Gazebo Harmonic**[cite: 21]. The architecture allows for the dynamic instantiation of multiple differential-drive robots equipped with LiDAR and RGB cameras, managing complex TF trees, namespaces, and dynamic ROS-Gazebo bridges[cite: 27, 29].
+This repository contains the full development of a scalable multi-robot simulation system from scratch using **ROS 2 (Jazzy)** and **Gazebo Harmonic**[cite: 21]. The architecture allows for the dynamic instantiation of multiple differential-drive robots equipped with LiDAR and RGB cameras, managing complex TF trees, namespaces, and dynamic ROS-Gazebo bridges[cite: 21, 27, 29, 30].
 
 ## ⚙️ System Architecture & Packages
 
 The workspace is modularized into three distinct ROS 2 packages:
 
-1. **`practica1` (Robot Description):** Contains the core URDF/Xacro descriptions. The robot is modeled with a differential drive base, caster wheel for stability, and macro-based modular sensors (`lidar.xacro`, `camara.xacro`)[cite: 24, 27]. Physics parameters (`inercias.xacro`) and visual properties are strictly separated[cite: 25].
+1. **`practica1` (Robot Description):** Contains the core URDF/Xacro descriptions[cite: 21]. The robot is modeled with a differential drive base, caster wheel for stability, and macro-based modular sensors (`lidar.xacro`, `camara.xacro`)[cite: 24, 27]. Physics parameters (`inercias.xacro`) and visual properties are strictly separated[cite: 25].
 2. **`robot_bringup` (Single Agent Instance):** Manages the simulation of a single robot. Includes the static `bridge.yaml` for ROS-Gazebo topic routing, the base `world.sdf`, and RViz2 configuration profiles[cite: 25].
-3. **`multirobot_bringup` (Multi-Agent Orchestrator):** The core orchestrator for multi-robot deployment. It utilizes Xacro arguments to dynamically inject `prefix` tags into all links, joints, and Gazebo references[cite: 28, 29]. It features a Python launch file that generates dynamic ROS-Gazebo bridges "on the fly" and spaces out the spawning poses (`--y`) of an arbitrary number of robots.
+3. **`multirobot_bringup` (Multi-Agent Orchestrator):** The core orchestrator for multi-robot deployment. It utilizes Xacro arguments to dynamically inject `prefix` tags into all links, joints, and Gazebo references[cite: 28, 29]. It features a Python launch file that generates dynamic ROS-Gazebo bridges "on the fly" and spaces out the spawning poses (`--y`) of an arbitrary number of robots[cite: 29].
 
 ## 💻 How to Build and Run
 
 ### Prerequisites
-* Ubuntu 24.04 LTS
-* ROS 2 Jazzy
-* Gazebo Harmonic
+* Ubuntu 24.04 LTS[cite: 21]
+* ROS 2 Jazzy[cite: 21]
+* Gazebo Harmonic[cite: 21]
 
 ### Build the Workspace
-Clone the repository into your ROS 2 workspace `src` folder and build:
+Clone the repository into your ROS 2 workspace `src` folder and build the packages:
 ```bash
 colcon build
 source install/setup.bash
