@@ -1,0 +1,269 @@
+amcl:
+  ros__parameters:
+    use_sim_time: false
+    base_frame_id: base_link
+    odom_frame_id: odom
+    global_frame_id: map
+    scan_topic: /scan
+    laser_model_type: likelihood_field
+    min_particles: 500
+    max_particles: 2000
+    update_min_d: 0.15
+    update_min_a: 0.25
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: odom
+      robot_base_frame: base_link
+      rolling_window: true
+      width: 6
+      height: 6
+      resolution: 0.05
+      robot_radius: 0.20
+      update_frequency: 5.0
+      publish_frequency: 2.0
+      plugins: ["obstacle_layer", "inflation_layer"]
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: lidar
+        lidar:
+          topic: /scan
+          data_type: LaserScan
+          clearing: true
+          marking: true
+          obstacle_max_range: 3.5
+          obstacle_min_range: 0.0
+          raytrace_max_range: 4.0
+          raytrace_min_range: 0.0
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.45  # Seguridad razonable
+        cost_scaling_factor: 5.0
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      global_frame: map
+      robot_base_frame: base_link
+      resolution: 0.05
+      robot_radius: 0.20
+      update_frequency: 1.0
+      publish_frequency: 1.0
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_topic: /map
+        subscribe_to_updates: true
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: lidar
+        lidar:
+          topic: /scan
+          data_type: LaserScan
+          clearing: true
+          marking: true
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.45
+
+planner_server:
+  ros__parameters:
+    use_sim_time: false
+    expected_planner_frequency: 1.0
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner::NavfnPlanner"
+      tolerance: 0.5
+      use_astar: false
+      allow_unknown: true
+
+# =====================================================
+# CONTROLLER - CONFIGURACIÓN SEGURA 0.8 m/s MAX
+# =====================================================
+controller_server:
+  ros__parameters:
+    use_sim_time: false
+    controller_frequency: 20.0
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.5
+    min_theta_velocity_threshold: 0.001
+    
+    # Timeouts para evitar cancelaciones prematuras
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugins: ["general_goal_checker"]
+    
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.5   # Debe moverse 0.5m en tiempo X
+      movement_time_allowance: 10.0   # 10 segundos sin moverse = fallo
+    
+    general_goal_checker:
+      stateful: true
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.25        # Tolerancia de posición
+      yaw_goal_tolerance: 6.28       # 🔧 360° = acepta cualquier orientación (no reorienta)
+    
+    controller_plugins: ["FollowPath"]
+    
+    FollowPath:
+      plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
+      
+      # VELOCIDADES LIMITADAS ESTRICTAMENTE 🐌
+      desired_linear_vel: 0.5      # 🔒 MÁXIMO 0.5 m/s
+      max_linear_accel: 0.8        # 🔒 Aceleración MUY suave
+      max_linear_decel: 1.0        # Frenado suave
+      
+      max_angular_accel: 1.5
+      max_angular_vel: 1.0         # 🔒 Giros lentos
+      
+      # LOOKAHEAD - Equilibrado
+      lookahead_dist: 0.6
+      min_lookahead_dist: 0.4
+      max_lookahead_dist: 0.9
+      lookahead_time: 1.5
+      
+      # CONTROL EN CURVAS
+      rotate_to_heading_angular_vel: 1.5
+      min_approach_linear_velocity: 0.3
+      approach_velocity_scaling_dist: 0.8
+      
+      # REGULACIÓN - ACTIVA PARA SEGURIDAD ✅
+      use_velocity_scaled_lookahead_dist: true
+      use_regulated_linear_velocity_scaling: true
+      use_cost_regulated_linear_velocity_scaling: true  # ✅ ACTIVA
+      
+      regulated_linear_scaling_min_radius: 0.5
+      regulated_linear_scaling_min_speed: 0.25
+      cost_scaling_dist: 0.6
+      cost_scaling_gain: 1.0
+      inflation_cost_scaling_factor: 3.0
+      
+      # COLISIONES - ACTIVAS ✅
+      use_collision_detection: true  # ✅ ACTIVA
+      max_allowed_time_to_collision_up_to_carrot: 1.5
+      
+      # ORIENTACIÓN - Desactivado para no perder tiempo
+      use_rotate_to_heading: false  # ❌ No gira antes de moverse
+      allow_reversing: false
+      
+      # TOLERANCIAS
+      transform_tolerance: 0.5
+      use_interpolation: true
+      
+      # TOLERANCIA DE GOAL - CRÍTICO para no cancelar prematuramente
+      xy_goal_tolerance: 0.25        # Acepta llegar a 25cm del objetivo
+      yaw_goal_tolerance: 6.28       # 🔧 360° = acepta cualquier orientación
+      stateful: true                 # Mantiene estado entre llamadas
+
+smoother_server:
+  ros__parameters:
+    use_sim_time: false
+    smoother_plugins: ["simple_smoother"]
+    simple_smoother:
+      plugin: "nav2_smoother::SimpleSmoother"
+      tolerance: 1.0e-10
+      max_its: 1000
+      do_refinement: true
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: false
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
+    bt_loop_duration: 10
+    default_server_timeout: 20
+    
+    # TOLERANCIAS DE GOAL - Ajustadas para no cancelar prematuramente
+    goal_blackboard_id: goal
+    goals_blackboard_id: goals
+    path_blackboard_id: path
+    
+    # Archivo de comportamiento
+    default_bt_xml_filename: "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml"
+
+# =====================================================
+# COLLISION MONITOR - ACTIVO Y CONFIGURADO ✅
+# =====================================================
+collision_monitor:
+  ros__parameters:
+    use_sim_time: false
+    base_frame_id: base_link
+    odom_frame_id: odom
+    cmd_vel_in_topic: cmd_vel_smoothed
+    cmd_vel_out_topic: cmd_vel
+    transform_tolerance: 0.5
+    source_timeout: 5.0
+    observation_sources: [scan]  # ✅ ACTIVO
+    
+    scan:
+      type: scan
+      topic: /scan
+      min_height: 0.0
+      max_height: 2.0
+      enabled: true  # ✅ ACTIVO
+    
+    polygons: ["slowdown_zone", "stop_zone"]  # ✅ ZONAS ACTIVAS
+    
+    slowdown_zone:
+      type: polygon
+      action_type: slowdown
+      points: "[[0.5, 0.4], [0.5, -0.4], [-0.2, -0.4], [-0.2, 0.4]]"
+      slowdown_ratio: 0.5  # Reduce a 50% cerca de obstáculos
+      visualize: true
+      
+    stop_zone:
+      type: polygon
+      action_type: stop
+      points: "[[0.25, 0.25], [0.25, -0.25], [-0.15, -0.25], [-0.15, 0.25]]"
+      visualize: true
+
+docking_server:
+  ros__parameters:
+    controller_frequency: 50.0
+    initial_perception_timeout: 5.0
+    wait_charge_timeout: 5.0
+    dock_approach_timeout: 30.0
+    undock_linear_tolerance: 0.05
+    undock_angular_tolerance: 0.1
+    max_retries: 3
+    base_frame: "base_link"
+    fixed_frame: "odom"
+    dock_backwards: false
+    dock_prestaging_tolerance: 0.5
+
+    dock_plugins: ['simple_charging_dock']
+    simple_charging_dock:
+      plugin: 'opennav_docking::SimpleChargingDock'
+      docking_threshold: 0.05
+      staging_x_offset: -0.7
+      use_external_detection_pose: true
+      use_battery_status: false
+      use_stall_detection: false
+      external_detection_timeout: 1.0
+      external_detection_translation_x: -0.18
+      external_detection_translation_y: 0.0
+      external_detection_rotation_roll: -1.57
+      external_detection_rotation_pitch: -1.57
+      external_detection_rotation_yaw: 0.0
+      filter_coef: 0.1
+
+    controller:
+      k_phi: 3.0
+      k_delta: 2.0
+      v_linear_min: 0.9
+      v_linear_max: 1.0
+      use_collision_detection: true
+      costmap_topic: "local_costmap/costmap_raw"
+      footprint_topic: "local_costmap/published_footprint"
+      transform_tolerance: 0.1
+      projection_time: 5.0
+      simulation_step: 0.1
+      dock_collision_threshold: 0.3      
+
+lifecycle_manager:
+  ros__parameters:
+    use_sim_time: false
+    autostart: true
+    node_names: ["map_server", "amcl", "planner_server", "controller_server", "bt_navigator", "smoother_server"]

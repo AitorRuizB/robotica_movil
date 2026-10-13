@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>practica3</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="otto@ua.es">ros2</maintainer>
+  <license>TODO: License declaration</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <!-- Dependencias básicas de ejecución -->
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav2_msgs</depend>
+
+  <!-- Dependencias de YASMIN -->
+  <depend>yasmin</depend>
+  <depend>yasmin_ros</depend>
+  <depend>yasmin_viewer</depend>
+  
+  <!-- Dependencias de trees-->
+  <exec_depend>py_trees</exec_depend>
+  <exec_depend>py_trees_ros</exec_depend>
+
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+</package>
