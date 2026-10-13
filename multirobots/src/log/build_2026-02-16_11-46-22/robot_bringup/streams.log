@@ -1,0 +1,34 @@
+[8.376s] Invoking command in '/home/aitor/multirobots_ros/src/robot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aitor/multirobots_ros/src/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_bringup build --build-base /home/aitor/multirobots_ros/src/build/robot_bringup/build install --record /home/aitor/multirobots_ros/src/build/robot_bringup/install.log --single-version-externally-managed install_data
+[8.768s] running egg_info
+[8.768s] creating ../build/robot_bringup/robot_bringup.egg-info
+[8.802s] writing ../build/robot_bringup/robot_bringup.egg-info/PKG-INFO
+[8.802s] writing dependency_links to ../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt
+[8.802s] writing requirements to ../build/robot_bringup/robot_bringup.egg-info/requires.txt
+[8.803s] writing top-level names to ../build/robot_bringup/robot_bringup.egg-info/top_level.txt
+[8.803s] writing manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[8.873s] reading manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[8.874s] writing manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[8.902s] running build
+[8.902s] running build_py
+[8.903s] creating /home/aitor/multirobots_ros/src/build/robot_bringup/build
+[8.903s] creating /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib
+[8.903s] creating /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup
+[8.903s] copying robot_bringup/__init__.py -> /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup
+[8.904s] running install
+[8.910s] running install_lib
+[8.947s] creating /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup
+[8.947s] copying /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup/__init__.py -> /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup
+[8.948s] byte-compiling /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup/__init__.py to __init__.cpython-312.pyc
+[8.949s] running install_data
+[8.949s] creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index
+[8.949s] creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index
+[8.950s] creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index/packages
+[8.950s] copying resource/robot_bringup -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index/packages
+[8.950s] copying package.xml -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup
+[8.950s] creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup/world
+[8.950s] copying world/world.sdf -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup/world
+[8.950s] running install_egg_info
+[8.989s] Copying ../build/robot_bringup/robot_bringup.egg-info to /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup-0.0.0-py3.12.egg-info
+[8.990s] running install_scripts
+[9.252s] writing list of installed files to '/home/aitor/multirobots_ros/src/build/robot_bringup/install.log'
+[9.292s] Invoked command in '/home/aitor/multirobots_ros/src/robot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aitor/multirobots_ros/src/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_bringup build --build-base /home/aitor/multirobots_ros/src/build/robot_bringup/build install --record /home/aitor/multirobots_ros/src/build/robot_bringup/install.log --single-version-externally-managed install_data

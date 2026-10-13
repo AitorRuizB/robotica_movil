@@ -1,0 +1,41 @@
+[8.384s] Invoking command in '/home/aitor/multirobots_ros/src/practica1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aitor/multirobots_ros/src/build/practica1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/practica1 build --build-base /home/aitor/multirobots_ros/src/build/practica1/build install --record /home/aitor/multirobots_ros/src/build/practica1/install.log --single-version-externally-managed install_data
+[8.782s] running egg_info
+[8.783s] creating ../build/practica1/practica1.egg-info
+[8.816s] writing ../build/practica1/practica1.egg-info/PKG-INFO
+[8.817s] writing dependency_links to ../build/practica1/practica1.egg-info/dependency_links.txt
+[8.817s] writing requirements to ../build/practica1/practica1.egg-info/requires.txt
+[8.817s] writing top-level names to ../build/practica1/practica1.egg-info/top_level.txt
+[8.817s] writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+[8.890s] reading manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+[8.891s] writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+[8.914s] running build
+[8.914s] running build_py
+[8.915s] creating /home/aitor/multirobots_ros/src/build/practica1/build
+[8.915s] creating /home/aitor/multirobots_ros/src/build/practica1/build/lib
+[8.915s] creating /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1
+[8.915s] copying practica1/__init__.py -> /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1
+[8.916s] running install
+[8.924s] running install_lib
+[8.965s] creating /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1
+[8.965s] copying /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1/__init__.py -> /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1
+[8.966s] byte-compiling /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1/__init__.py to __init__.cpython-312.pyc
+[8.966s] running install_data
+[8.966s] creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index
+[8.966s] creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index
+[8.967s] creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages
+[8.967s] copying resource/practica1 -> /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages
+[8.967s] copying package.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1
+[8.967s] creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+[8.967s] copying launch/gazebo.launch.py -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+[8.968s] copying launch/display.launch.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+[9.008s] creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.008s] copying urdf/robot.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.008s] copying urdf/inercias.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.009s] copying urdf/materials.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.009s] copying urdf/robot.urdf -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.009s] copying urdf/plugins.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+[9.009s] running install_egg_info
+[9.047s] Copying ../build/practica1/practica1.egg-info to /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1-0.0.0-py3.12.egg-info
+[9.048s] running install_scripts
+[9.317s] writing list of installed files to '/home/aitor/multirobots_ros/src/build/practica1/install.log'
+[9.498s] Invoked command in '/home/aitor/multirobots_ros/src/practica1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aitor/multirobots_ros/src/build/practica1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/practica1 build --build-base /home/aitor/multirobots_ros/src/build/practica1/build install --record /home/aitor/multirobots_ros/src/build/practica1/install.log --single-version-externally-managed install_data

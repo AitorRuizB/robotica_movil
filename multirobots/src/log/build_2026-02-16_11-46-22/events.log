@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.000470] (practica1) JobQueued: {'identifier': 'practica1', 'dependencies': OrderedDict()}
+[0.000624] (robot_bringup) JobQueued: {'identifier': 'robot_bringup', 'dependencies': OrderedDict()}
+[0.000747] (practica1) JobStarted: {'identifier': 'practica1'}
+[0.011906] (robot_bringup) JobStarted: {'identifier': 'robot_bringup'}
+[0.099356] (-) TimerEvent: {}
+[0.199711] (-) TimerEvent: {}
+[0.300012] (-) TimerEvent: {}
+[0.400402] (-) TimerEvent: {}
+[0.500719] (-) TimerEvent: {}
+[0.601030] (-) TimerEvent: {}
+[0.701350] (-) TimerEvent: {}
+[0.801652] (-) TimerEvent: {}
+[0.902007] (-) TimerEvent: {}
+[1.002394] (-) TimerEvent: {}
+[1.102793] (-) TimerEvent: {}
+[1.203168] (-) TimerEvent: {}
+[1.303491] (-) TimerEvent: {}
+[1.403880] (-) TimerEvent: {}
+[1.504331] (-) TimerEvent: {}
+[1.604755] (-) TimerEvent: {}
+[1.705078] (-) TimerEvent: {}
+[1.805486] (-) TimerEvent: {}
+[1.905810] (-) TimerEvent: {}
+[2.006143] (-) TimerEvent: {}
+[2.106533] (-) TimerEvent: {}
+[2.206942] (-) TimerEvent: {}
+[2.307282] (-) TimerEvent: {}
+[2.407708] (-) TimerEvent: {}
+[2.508142] (-) TimerEvent: {}
+[2.608474] (-) TimerEvent: {}
+[2.708832] (-) TimerEvent: {}
+[2.809147] (-) TimerEvent: {}
+[2.909491] (-) TimerEvent: {}
+[3.009920] (-) TimerEvent: {}
+[3.110241] (-) TimerEvent: {}
+[3.210581] (-) TimerEvent: {}
+[3.310922] (-) TimerEvent: {}
+[3.411231] (-) TimerEvent: {}
+[3.511640] (-) TimerEvent: {}
+[3.612108] (-) TimerEvent: {}
+[3.712560] (-) TimerEvent: {}
+[3.812956] (-) TimerEvent: {}
+[3.913281] (-) TimerEvent: {}
+[4.013647] (-) TimerEvent: {}
+[4.114078] (-) TimerEvent: {}
+[4.214406] (-) TimerEvent: {}
+[4.314752] (-) TimerEvent: {}
+[4.415202] (-) TimerEvent: {}
+[4.515610] (-) TimerEvent: {}
+[4.615984] (-) TimerEvent: {}
+[4.716341] (-) TimerEvent: {}
+[4.816741] (-) TimerEvent: {}
+[4.917198] (-) TimerEvent: {}
+[5.017646] (-) TimerEvent: {}
+[5.118055] (-) TimerEvent: {}
+[5.218511] (-) TimerEvent: {}
+[5.318933] (-) TimerEvent: {}
+[5.419409] (-) TimerEvent: {}
+[5.519812] (-) TimerEvent: {}
+[5.620234] (-) TimerEvent: {}
+[5.720510] (-) TimerEvent: {}
+[5.820979] (-) TimerEvent: {}
+[5.921429] (-) TimerEvent: {}
+[6.021883] (-) TimerEvent: {}
+[6.122170] (-) TimerEvent: {}
+[6.222574] (-) TimerEvent: {}
+[6.322858] (-) TimerEvent: {}
+[6.423370] (-) TimerEvent: {}
+[6.523710] (-) TimerEvent: {}
+[6.624064] (-) TimerEvent: {}
+[6.724343] (-) TimerEvent: {}
+[6.824776] (-) TimerEvent: {}
+[6.925038] (-) TimerEvent: {}
+[7.025518] (-) TimerEvent: {}
+[7.125867] (-) TimerEvent: {}
+[7.226235] (-) TimerEvent: {}
+[7.326682] (-) TimerEvent: {}
+[7.427130] (-) TimerEvent: {}
+[7.527411] (-) TimerEvent: {}
+[7.627833] (-) TimerEvent: {}
+[7.728159] (-) TimerEvent: {}
+[7.828404] (-) TimerEvent: {}
+[7.928685] (-) TimerEvent: {}
+[8.028963] (-) TimerEvent: {}
+[8.129291] (-) TimerEvent: {}
+[8.229662] (-) TimerEvent: {}
+[8.329985] (-) TimerEvent: {}
+[8.382327] (practica1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/practica1', 'build', '--build-base', '/home/aitor/multirobots_ros/src/build/practica1/build', 'install', '--record', '/home/aitor/multirobots_ros/src/build/practica1/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/aitor/multirobots_ros/src/practica1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'aitor', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aitor', 'OLDPWD': '/home/aitor', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2835', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/aitor/multirobots_ros/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aitor', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aitor', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/aitor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aitorpc:@/tmp/.ICE-unix/2802,unix/aitorpc:/tmp/.ICE-unix/2802', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1ea94939_1ce8_4b8f_8953_149a363eafc5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AUTH_SOCK': '/run/user/1000/gnupg/S.gpg-agent.ssh', 'AMENT_PREFIX_PATH': '/home/aitor/multirobots_ros/install/practica1:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aitor/multirobots_ros/src/build/practica1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aitor/multirobots_ros/src/build/practica1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages:/home/aitor/multirobots_ros/install/practica1/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[8.385866] (robot_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/robot_bringup', 'build', '--build-base', '/home/aitor/multirobots_ros/src/build/robot_bringup/build', 'install', '--record', '/home/aitor/multirobots_ros/src/build/robot_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/aitor/multirobots_ros/src/robot_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'aitor', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aitor', 'OLDPWD': '/home/aitor', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2835', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/aitor/multirobots_ros/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aitor', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aitor', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/aitor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aitorpc:@/tmp/.ICE-unix/2802,unix/aitorpc:/tmp/.ICE-unix/2802', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1ea94939_1ce8_4b8f_8953_149a363eafc5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AUTH_SOCK': '/run/user/1000/gnupg/S.gpg-agent.ssh', 'AMENT_PREFIX_PATH': '/home/aitor/multirobots_ros/install/practica1:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aitor/multirobots_ros/src/build/robot_bringup', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aitor/multirobots_ros/src/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages:/home/aitor/multirobots_ros/install/practica1/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[8.430093] (-) TimerEvent: {}
+[8.530352] (-) TimerEvent: {}
+[8.630611] (-) TimerEvent: {}
+[8.730875] (-) TimerEvent: {}
+[8.780118] (robot_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[8.780504] (robot_bringup) StdoutLine: {'line': b'creating ../build/robot_bringup/robot_bringup.egg-info\n'}
+[8.782965] (practica1) StdoutLine: {'line': b'running egg_info\n'}
+[8.783409] (practica1) StdoutLine: {'line': b'creating ../build/practica1/practica1.egg-info\n'}
+[8.813841] (robot_bringup) StdoutLine: {'line': b'writing ../build/robot_bringup/robot_bringup.egg-info/PKG-INFO\n'}
+[8.814087] (robot_bringup) StdoutLine: {'line': b'writing dependency_links to ../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt\n'}
+[8.814323] (robot_bringup) StdoutLine: {'line': b'writing requirements to ../build/robot_bringup/robot_bringup.egg-info/requires.txt\n'}
+[8.814555] (robot_bringup) StdoutLine: {'line': b'writing top-level names to ../build/robot_bringup/robot_bringup.egg-info/top_level.txt\n'}
+[8.814696] (robot_bringup) StdoutLine: {'line': b"writing manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'\n"}
+[8.817048] (practica1) StdoutLine: {'line': b'writing ../build/practica1/practica1.egg-info/PKG-INFO\n'}
+[8.817364] (practica1) StdoutLine: {'line': b'writing dependency_links to ../build/practica1/practica1.egg-info/dependency_links.txt\n'}
+[8.817600] (practica1) StdoutLine: {'line': b'writing requirements to ../build/practica1/practica1.egg-info/requires.txt\n'}
+[8.817769] (practica1) StdoutLine: {'line': b'writing top-level names to ../build/practica1/practica1.egg-info/top_level.txt\n'}
+[8.817950] (practica1) StdoutLine: {'line': b"writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'\n"}
+[8.830975] (-) TimerEvent: {}
+[8.884828] (robot_bringup) StdoutLine: {'line': b"reading manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'\n"}
+[8.885622] (robot_bringup) StdoutLine: {'line': b"writing manifest file '../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'\n"}
+[8.890918] (practica1) StdoutLine: {'line': b"reading manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'\n"}
+[8.891779] (practica1) StdoutLine: {'line': b"writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'\n"}
+[8.913267] (robot_bringup) StdoutLine: {'line': b'running build\n'}
+[8.913837] (robot_bringup) StdoutLine: {'line': b'running build_py\n'}
+[8.914159] (practica1) StdoutLine: {'line': b'running build\n'}
+[8.914737] (practica1) StdoutLine: {'line': b'running build_py\n'}
+[8.914913] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/robot_bringup/build\n'}
+[8.915078] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib\n'}
+[8.915222] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup\n'}
+[8.915349] (robot_bringup) StdoutLine: {'line': b'copying robot_bringup/__init__.py -> /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup\n'}
+[8.915479] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/practica1/build\n'}
+[8.915612] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/practica1/build/lib\n'}
+[8.915750] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1\n'}
+[8.915894] (practica1) StdoutLine: {'line': b'copying practica1/__init__.py -> /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1\n'}
+[8.916066] (robot_bringup) StdoutLine: {'line': b'running install\n'}
+[8.916232] (practica1) StdoutLine: {'line': b'running install\n'}
+[8.921754] (robot_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[8.924882] (practica1) StdoutLine: {'line': b'running install_lib\n'}
+[8.931118] (-) TimerEvent: {}
+[8.959138] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup\n'}
+[8.959441] (robot_bringup) StdoutLine: {'line': b'copying /home/aitor/multirobots_ros/src/build/robot_bringup/build/lib/robot_bringup/__init__.py -> /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup\n'}
+[8.960346] (robot_bringup) StdoutLine: {'line': b'byte-compiling /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup/__init__.py to __init__.cpython-312.pyc\n'}
+[8.960702] (robot_bringup) StdoutLine: {'line': b'running install_data\n'}
+[8.960993] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index\n'}
+[8.961258] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index\n'}
+[8.961512] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index/packages\n'}
+[8.961697] (robot_bringup) StdoutLine: {'line': b'copying resource/robot_bringup -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/ament_index/resource_index/packages\n'}
+[8.961892] (robot_bringup) StdoutLine: {'line': b'copying package.xml -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup\n'}
+[8.962097] (robot_bringup) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup/world\n'}
+[8.962252] (robot_bringup) StdoutLine: {'line': b'copying world/world.sdf -> /home/aitor/multirobots_ros/src/install/robot_bringup/share/robot_bringup/world\n'}
+[8.962398] (robot_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.965412] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1\n'}
+[8.965643] (practica1) StdoutLine: {'line': b'copying /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1/__init__.py -> /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1\n'}
+[8.966238] (practica1) StdoutLine: {'line': b'byte-compiling /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1/__init__.py to __init__.cpython-312.pyc\n'}
+[8.966524] (practica1) StdoutLine: {'line': b'running install_data\n'}
+[8.966763] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index\n'}
+[8.966983] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index\n'}
+[8.967250] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages\n'}
+[8.967446] (practica1) StdoutLine: {'line': b'copying resource/practica1 -> /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages\n'}
+[8.967708] (practica1) StdoutLine: {'line': b'copying package.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1\n'}
+[8.967915] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch\n'}
+[8.968065] (practica1) StdoutLine: {'line': b'copying launch/gazebo.launch.py -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch\n'}
+[8.968236] (practica1) StdoutLine: {'line': b'copying launch/display.launch.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch\n'}
+[9.000762] (robot_bringup) StdoutLine: {'line': b'Copying ../build/robot_bringup/robot_bringup.egg-info to /home/aitor/multirobots_ros/src/install/robot_bringup/lib/python3.12/site-packages/robot_bringup-0.0.0-py3.12.egg-info\n'}
+[9.001739] (robot_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[9.008441] (practica1) StdoutLine: {'line': b'creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.008792] (practica1) StdoutLine: {'line': b'copying urdf/robot.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.009036] (practica1) StdoutLine: {'line': b'copying urdf/inercias.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.009324] (practica1) StdoutLine: {'line': b'copying urdf/materials.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.009532] (practica1) StdoutLine: {'line': b'copying urdf/robot.urdf -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.009814] (practica1) StdoutLine: {'line': b'copying urdf/plugins.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf\n'}
+[9.010002] (practica1) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.031193] (-) TimerEvent: {}
+[9.047844] (practica1) StdoutLine: {'line': b'Copying ../build/practica1/practica1.egg-info to /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1-0.0.0-py3.12.egg-info\n'}
+[9.048871] (practica1) StdoutLine: {'line': b'running install_scripts\n'}
+[9.131286] (-) TimerEvent: {}
+[9.231564] (-) TimerEvent: {}
+[9.263997] (robot_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/aitor/multirobots_ros/src/build/robot_bringup/install.log'\n"}
+[9.303915] (robot_bringup) CommandEnded: {'returncode': 0}
+[9.317492] (practica1) StdoutLine: {'line': b"writing list of installed files to '/home/aitor/multirobots_ros/src/build/practica1/install.log'\n"}
+[9.331699] (-) TimerEvent: {}
+[9.432101] (-) TimerEvent: {}
+[9.496428] (robot_bringup) JobEnded: {'identifier': 'robot_bringup', 'rc': 0}
+[9.497931] (practica1) CommandEnded: {'returncode': 0}
+[9.507822] (practica1) JobEnded: {'identifier': 'practica1', 'rc': 0}
+[9.509030] (-) EventReactorShutdown: {}

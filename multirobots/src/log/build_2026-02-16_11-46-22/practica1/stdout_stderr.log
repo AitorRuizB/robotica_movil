@@ -1,0 +1,39 @@
+running egg_info
+creating ../build/practica1/practica1.egg-info
+writing ../build/practica1/practica1.egg-info/PKG-INFO
+writing dependency_links to ../build/practica1/practica1.egg-info/dependency_links.txt
+writing requirements to ../build/practica1/practica1.egg-info/requires.txt
+writing top-level names to ../build/practica1/practica1.egg-info/top_level.txt
+writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+reading manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+writing manifest file '../build/practica1/practica1.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aitor/multirobots_ros/src/build/practica1/build
+creating /home/aitor/multirobots_ros/src/build/practica1/build/lib
+creating /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1
+copying practica1/__init__.py -> /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1
+running install
+running install_lib
+creating /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1
+copying /home/aitor/multirobots_ros/src/build/practica1/build/lib/practica1/__init__.py -> /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1
+byte-compiling /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index
+creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index
+creating /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages
+copying resource/practica1 -> /home/aitor/multirobots_ros/src/install/practica1/share/ament_index/resource_index/packages
+copying package.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1
+creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+copying launch/gazebo.launch.py -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+copying launch/display.launch.xml -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/launch
+creating /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+copying urdf/robot.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+copying urdf/inercias.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+copying urdf/materials.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+copying urdf/robot.urdf -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+copying urdf/plugins.urdf.xacro -> /home/aitor/multirobots_ros/src/install/practica1/share/practica1/urdf
+running install_egg_info
+Copying ../build/practica1/practica1.egg-info to /home/aitor/multirobots_ros/src/install/practica1/lib/python3.12/site-packages/practica1-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/aitor/multirobots_ros/src/build/practica1/install.log'
